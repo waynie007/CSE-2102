@@ -1,0 +1,11 @@
+// Data Retrieval For Truck_Driver Table//
+SELECT * FROM `truck_driver` WHERE First_Name = 'Sodesh'         // Displays data for sodesh alone //
+SELECT * FROM `truck_driver` WHERE First_Name = 'Wayne'          // Displays data for Wayne alone //
+SELECT * FROM `truck_driver` WHERE `Truck_Driver_ID` = 10245     // Displays data where Truck_Driver_ID = 10245  // 
+SELECT * FROM `truck_driver` WHERE `Truck_Driver_ID` = 10254     // Displays data where Truck_Driver_ID = 10254  //
+SELECT * FROM `truck_driver`    // Displays data in entire table //
+
+// Data Retrieval For Truck_Records Table//
+SELECT * FROM `truck_records`                                                        // shows data of entire table //
+SELECT * FROM `truck_records` WHERE `Delivery_Truck_ID` = 11001                      // Displays data where Delivery_Truck_ID = 11001 //
+SELECT * FROM `truck_records` WHERE `Daily_Fuel_Expenditure(Gallons)` > 40           // Displays data where Daily_Fuel_Expenditure is greater than 40 //

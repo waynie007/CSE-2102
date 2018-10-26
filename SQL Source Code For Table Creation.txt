@@ -1,0 +1,14 @@
+// Source code to create the database and tables //
+
+CREATE TABLE `CSE2102_Group_Project`.`Truck_Driver` ( `Truck_Driver_ID` INT(5) NOT NULL AUTO_INCREMENT , `First_Name` VARCHAR(15) NOT NULL , `Last_Name` VARCHAR(15) NOT NULL , PRIMARY KEY (`Truck_Driver_ID`));
+CREATE TABLE `cse2102_group_project`.`Truck_Records` ( `Delivery_Truck_ID` INT(5) NOT NULL , `Truck_Driver_ID` INT(5) NOT NULL , `Quantity_Of_Bottles_Brought_In` INT(30) NOT NULL , `Quantity_Of_Bottles_Taken_Away` INT(30) NOT NULL , `Daily_Fuel_Expenditure(Gallons)` INT(50) NOT NULL , PRIMARY KEY (`Delivery_Truck_ID`), UNIQUE (`Truck_Driver_ID`));
+
+// Sample Source code to enter data into Truck_Driver table //
+INSERT INTO `truck_driver` (`Truck_Driver_ID`, `First_Name`, `Last_Name`) VALUES ('10245', 'Wayne', 'Forde')
+INSERT INTO `truck_driver` (`Truck_Driver_ID`, `First_Name`, `Last_Name`) VALUES ('10254', 'Sodesh', 'Dindayal')
+
+// Sample Source code to enter data into Truck_Records table //
+INSERT INTO `truck_records` (`Delivery_Truck_ID`, `Truck_Driver_ID`, `Quantity_Of_Bottles_Brought_In`, `Quantity_Of_Bottles_Taken_Away`, `Daily_Fuel_Expenditure(Gallons)`) VALUES ('11002', '10254', '450', '400', '50')
+INSERT INTO `truck_records` (`Delivery_Truck_ID`, `Truck_Driver_ID`, `Quantity_Of_Bottles_Brought_In`, `Quantity_Of_Bottles_Taken_Away`, `Daily_Fuel_Expenditure(Gallons)`) VALUES ('11001', '10245', '500', '500', '20')
+
+
